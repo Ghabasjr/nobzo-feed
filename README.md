@@ -5,7 +5,7 @@ Stack Used:
 - Typescript
 - React Native
 
-API used
+API used:
 https://picsum.photos/v2/list?page=<page>&limit=<limit>
 
 Each Item Displays
@@ -14,18 +14,12 @@ Each Item Displays
 ● Item id
 
 
-Features Implemented
-
+Features Implemented:
 Infinite scrolling with pagination
-
 Pull-to-refresh
-
 Loading states (initial + loading more)
-
 Error state with retry
-
 Empty state
-
 Responsive UI for different screen sizes/orientations
 
 1) UI
@@ -52,14 +46,11 @@ Responsive UI for different screen sizes/orientations
 
 Installation
 (From GitHub)
-
 Clone the repository:
-
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
 
 Install dependencies:
-
 npm install
 Run with Expo
 
@@ -67,7 +58,11 @@ Start the development server:
 npx expo start
 
 Then:
-
 Install Expo Go on your phone
-
 Scan the QR code from the terminal or browser
+
+
+Assumptions:
+The Pagination stops when returned items are less than the requested limit.
+Images are loaded directly from the provided public API.
+FlatList used for performance and scalability.
